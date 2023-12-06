@@ -218,19 +218,19 @@ for (i = 0; i < coll.length; i++) {
 	  
   <div class='btnShown'>
 	  
-    <button class= "btn" onclick= "nextSlide()"><b>Next</b></button>
-    <button class= "btn" onclick= "backSlide()"><b>Back</b></button>	  
+    <button class= "btn1" onclick= "nextSlide()"><b>Next</b></button>
+    <button class= "btn1" onclick= "backSlide()"><b>Back</b></button>	  
   </div>
 	  
   <div class= "slideNumShown">
 	  
-    <button class= "btn" onclick= "slideNumber(1)"><b>Slide 1</b></button>
-    <button class= "btn" onclick= "slideNumber(2)"><b>Slide 2</b></button>
-    <button class= "btn" onclick= "slideNumber(3)"><b>Slide 3</b></button>
+    <button class= "btn2" onclick= "slideNumber(1)"><b>Slide 1</b></button>
+    <button class= "btn2" onclick= "slideNumber(2)"><b>Slide 2</b></button>
+    <button class= "btn2" onclick= "slideNumber(3)"><b>Slide 3</b></button>
 	  <p></p>
-    <button class= "btn" onclick= "slideNumber(4)"><b>Slide 4</b></button>
-    <button class= "btn" onclick= "slideNumber(5)"><b>Slide 5</b></button> 
-    <button class= "btn" onclick= "slideNumber(6)"><b>Slide 6</b></button>	  
+    <button class= "btn2" onclick= "slideNumber(4)"><b>Slide 4</b></button>
+    <button class= "btn2" onclick= "slideNumber(5)"><b>Slide 5</b></button> 
+    <button class= "btn2" onclick= "slideNumber(6)"><b>Slide 6</b></button>	  
   </div>
 	  
   <style>
@@ -248,7 +248,7 @@ for (i = 0; i < coll.length; i++) {
       margin-bottom: -75px;
     }
 	  
-    .btn {
+    .btn1 {
       padding: 10px 20px;
       border-line: 6px;
       background-color: #ffffff;
@@ -258,6 +258,18 @@ for (i = 0; i < coll.length; i++) {
       font-size: 18px;
       cursor: pointer;
       margin: 0 5px;
+    }
+   
+    .btn2 {
+      padding: 10px 20px;
+      border-line: 6px;
+      background-color: #ffffff;
+      color: #87CEEB;
+      border-color: #87CEEB;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 0 2px;
     }
 	  
     .slideNumShown {
