@@ -202,68 +202,71 @@ for (i = 0; i < coll.length; i++) {
 		showSlide();
 	}
 	showSlide();
-	
+	function showSlideNumber(slideNumber) {
+		currentSlide = slideNumber - 1;
+		showSlide();
+	}
 </script>
 
-
-	<div id= "slideShower">
-		<img id= "Slide" src= "Conference_Project_Presentation_PDF_Slide1" alt= "Slide" 1 style= "width:100%; max-width: 1600px;">
+<div
+	id= "slideShower">
+	<img id= "Slide" src= "Conference_Project_Presentation_PDF_Slide1" alt= "Slide" 1 style= "width:100%; max-width: 1600px;">
+	
+	<div class= "btnPresser">
 		
-		<div class= "btnPresser">
-			
-			<btn class= "btn" onclick= "prevSlide()">Previous</btn>
-			<btn class= "btn" onclick= "prevSlide()">Next</btn>
-			
-		</div>
-	
-		<div class= "slideNumShower">
-	
-			<btn class= "btn" onclick= "showSlideNumber(1)">1</btn>
-			<btn class= "btn" onclick= "showSlideNumber(2)">2</btn>
-			<btn class= "btn" onclick= "showSlideNumber(3)">3</btn>
-			<btn class= "btn" onclick= "showSlideNumber(4)">4</btn>
-			<btn class= "btn" onclick= "showSlideNumber(5)">5</btn>
-			<btn class= "btn" onclick= "showSlideNumber(6)">6</btn>
-			
-		</div>
-	
-		<style>
-			
-			#slideShower {
-				text-align: center;
-				position: relative;
-			}
-	
-			.btnPresser {
-				position: absolute;
-				bottom: 0;
-				left: 50%;
-				transform: translateX(-50%);
-				margin-bottom: -100px;
-			}
-	
-			.btn {
-				padding 10px 20px;
-				background-color:
-				color: blue;
-				border: none
-				border-radius: 5px;
-				font-size: 16px;
-				cursur: pointer;
-				margin: 0 5px;
-			}
-	
-			.slideNumShower {
-				position: absolute;
-				bottom: 0;
-				left: 50%
-				transform: translateX(-50%);
-				margin-bottom: -50px;
-			}
-			
-		</style>
-	
+		<btn class= "btn" onclick= "prevSlide()">Previous</btn>
+		<btn class= "btn" onclick= "prevSlide()">Next</btn>
+		
 	</div>
+
+	<div class= "slideNumShower">
+
+		<btn class= "btn" onclick= "showSlideNumber(1)">1</btn>
+		<btn class= "btn" onclick= "showSlideNumber(2)">2</btn>
+		<btn class= "btn" onclick= "showSlideNumber(3)">3</btn>
+		<btn class= "btn" onclick= "showSlideNumber(4)">4</btn>
+		<btn class= "btn" onclick= "showSlideNumber(5)">5</btn>
+		<btn class= "btn" onclick= "showSlideNumber(6)">6</btn>
+		
+	</div>
+
+	<style>
+		
+		#slideShower {
+			text-align: center;
+			position: relative;
+		}
+
+		.btnPresser {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-bottom: -100px;
+		}
+
+		.btn {
+			padding 10px 20px;
+			background-color:
+			color: blue;
+			border: none
+			border-radius: 5px;
+			font-size: 16px;
+			cursur: pointer;
+			margin: 0 5px;
+		}
+
+		.slideNumShower {
+			position: absolute;
+			bottom: 0;
+			left: 50%
+			transform: translateX(-50%);
+			margin-bottom: -50px;
+		}
+		
+	</style>
+
+</div>
 	   
 </body>
 	   
