@@ -186,78 +186,89 @@ for (i = 0; i < coll.length; i++) {
 	  
   </body2>
 
+	   <br></br>
+	   <br></br>
+
 <script>
 	
 	var slideImages= ["Conference_Project_Presentation_PDF_Slide1.pdf", "Conference_Project_Presentation_PDF_Slide2.pdf", "Conference_Project_Presentation_PDF_Slide3.pdf", "Conference_Project_Presentation_PDF_Slide4.pdf", "Conference_Project_Presentation_PDF_Slide5.pdf", "Conference_Project_Presentation_PDF_Slide6.pdf",];
 	var currentSlide = 0;
 	function showSlide() {
-		document.getElementById('slide').src=slideImages[currentSlide];
+		document.getElementById('Slide').src= slideImages[currentSlide];
       }
-    function nextSlide()
-      {
-        currentSlide=(currentSlide+1)%slideImages.length;
+    function nextSlide() {
+        currentSlide=(currentSlide + 1) % slideImages.length;
         showSlide();
       }
-    function backSlide()
-      {
-        currentSlide=(currentSlide-1+slideImages.length)%slideImages.length;
+    function backSlide() {
+        currentSlide=(currentSlide - 1 + slideImages.length) % slideImages.length;
         showSlide();
       }
-    function slideNumber(slideNo)
-      {
-        currentSlide=slideNo-1;
+    function slideNumber(slideNum) {
+        currentSlide= slideNum -1  
         showSlide();
       }
     showSlide();
+	
   </script>
-  <div id='slide_box'>
-    <img id='slide' src='Conference_Project_Presentation_PDF_Slide1.pdf' alt='Slide_1' style='width:100%; 
-      max-width:1600px;'>
-  <div class='button_box'>
-    <button class='button' onclick='nextSlide()'>Next</button>
-    <button class='button' onclick='backSLide()'>Back</button>
+	   
+  <div id='slideShown'>
+	  
+    <img id= "Slide" src= "Conference_Project_Presentation_PDF_Slide1.pdf" alt= "Slide_1" style= "width: 100%; 
+      max-width:  1600px;">
+	  
+  <div class='btn_box'>
+	  
+    <button class= "btn" onclick= "nextSlide()">Next</button>
+    <button class= "btn" onclick= "backSLide()">Back</button>
+	  
   </div>
-  <div class='slide_no_box'>
-    <button class='button' onclick='slideNumber(1)'>Slide 1</button>
-    <button class='button' onclick='slideNumber(2)'>Slide 2</button>
-    <button class='button' onclick='slideNumber(3)'>Slide 3</button>
-    <button class='button' onclick='slideNumber(4)'>SLide 4</button>
-    <button class='button' onclick='slideNumber(5)'>Slide 5</button>
-    <button class='button' onclick='slideNumber(6)'>Slide 6</button>
+	  
+  <div class= "slideNumShown">
+	  
+    <button class= "btn" onclick= "slideNumber(1)">Slide_1</button>
+    <button class= "btn" onclick= "slideNumber(2)">Slide_2</button>
+    <button class= "btn" onclick= "slideNumber(3)">Slide_3</button>
+    <button class= "btn" onclick= "slideNumber(4)">Slide_4</button>
+    <button class= "btn" onclick= "slideNumber(5)">Slide_5</button> 
+    <button class= "btn" onclick= "slideNumber(6)">Slide_6</button>
+	  
   </div>
+	  
   <style>
-    #slide_box
-    {
+	  
+    #slideShown {
       text-align: center;
       position: relative;
     }
-    .button_box
-    {
+	  
+    .btnShown {
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       margin-bottom: -100px;
     }
-    .button
-    {
-      padding 10px 20px;
-      background-color: red;
+	  
+    .btn {
+      padding: 10px 20px;
+      background-color: blue;
       color: white;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor:pointer;
+      border-radius: 6px;
+      font-size: 17px;
+      cursor: pointer;
       margin: 0 5px;
     }
-    .slide_no_box
-    {
+	  
+    .slideNumShown {
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       margin-bottom: -50px;
     }
+	  
   </style>
 	  
   </div>
