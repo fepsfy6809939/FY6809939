@@ -47,7 +47,7 @@ p.ex1 {
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	
   <style>
-  .mySlides {display:none;}
+  .mySlides {display:none}
   </style>
 
   <body style= "margin-left: 50px;">
@@ -201,11 +201,13 @@ for (i = 0; i < coll.length; i++) {
 		currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
 		showSlide();
 	}
-	showSlide();
 	function showSlideNumber(slideNumber) {
 		currentSlide = slideNumber - 1;
 		showSlide();
 	}
+	
+	showSlide();
+	
 </script>
 
 <div
