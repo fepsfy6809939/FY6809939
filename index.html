@@ -187,8 +187,28 @@ for (i = 0; i < coll.length; i++) {
   </body2>
 
 <script>
-	var slideImages= ["Conference_Project_Presentation_PDF_Slide1",
+	
+	var slideImages= ["Conference_Project_Presentation_PDF_Slide1", "Conference_Project_Presentation_PDF_Slide2", "Conference_Project_Presentation_PDF_Slide3", "Conference_Project_Presentation_PDF_Slide4", "Conference_Project_Presentation_PDF_Slide5", "Conference_Project_Presentation_PDF_Slide6",];
+	var currentSlide = 0;
+	function showSlide() {
+		document.getElementById("Slide").src= slideImages[currentSlide];
+	}
+	function nextSlide() {
+		currentSlide = (currentSlide + 1) % slideImages.length;
+		showSlide();
+	}
+	function prevSlide() {
+		currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+		showSlide();
+	}
+	showSlide();
+	
 </script>
+
+<div>
+	id= "slideContainer">
+	<img id= "Slide" src= "Conference_Project_Presentation_PDF_Slide1" alt= "Slide" 1 style
+</div>
 	   
 </body>
 	   
