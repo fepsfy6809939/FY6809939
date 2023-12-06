@@ -191,84 +191,75 @@ for (i = 0; i < coll.length; i++) {
 	var slideImages= ["Conference_Project_Presentation_PDF_Slide1", "Conference_Project_Presentation_PDF_Slide2", "Conference_Project_Presentation_PDF_Slide3", "Conference_Project_Presentation_PDF_Slide4", "Conference_Project_Presentation_PDF_Slide5", "Conference_Project_Presentation_PDF_Slide6",];
 	var currentSlide = 0;
 	function showSlide() {
-		document.getElementById("Slide").src= slideImages[currentSlide];
-	}
-	function nextSlide() {
-		currentSlide = (currentSlide + 1) % slideImages.length;
-		showSlide();
-	}
-	function prevSlide() {
-		currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-		showSlide();
-	}
-	function showSlideNumber(slideNumber) {
-		currentSlide = slideNumber - 1;
-		showSlide();
-	}
-	
-	showSlide();
-	
-</script>
-
-<div
-	id= "slideShower">
-	<img id= "Slide" src= "Conference_Project_Presentation_PDF_Slide1" alt= "Slide1" style= "width:100%; max-width: 1600px;">
-	
-	<div class= "btnPresser">
-		
-		<button class= "btn" onclick= "prevSlide()">Previous</button>
-		<button class= "btn" onclick= "prevSlide()">Next</button>
-		
-	</div>
-
-	<div class= "slideNumShower">
-
-		<button class= "btn" onclick= "showSlideNumber(1)">1</button>
-		<button class= "btn" onclick= "showSlideNumber(2)">2</button>
-		<button class= "btn" onclick= "showSlideNumber(3)">3</button>
-		<button class= "btn" onclick= "showSlideNumber(4)">4</button>
-		<button class= "btn" onclick= "showSlideNumber(5)">5</button>
-		<button class= "btn" onclick= "showSlideNumber(6)">6</button>
-		
-	</div>
-
-	<style>
-		
-		#slideShower {
-			text-align: center;
-			position: relative;
-		}
-
-		.btnPresser {
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			margin-bottom: -100px;
-		}
-
-		.btn {
-			padding 10px 20px;
-			background-color: #4CAF50;
-			color: blue;
-			border: none
-			border-radius: 5px;
-			font-size: 16px;
-			cursur: pointer;
-			margin: 0 5px;
-		}
-
-		.slideNumShower {
-			position: absolute;
-			bottom: 0;
-			left: 50%
-			transform: translateX(-50%);
-			margin-bottom: -50px;
-		}
-		
-	</style>
-
-</div>
+		document.getElementById('slide').src=slideImages[currentSlide];
+      }
+    function nextSlide()
+      {
+        currentSlide=(currentSlide+1)%slideImages.length;
+        showSlide();
+      }
+    function backSlide()
+      {
+        currentSlide=(currentSlide-1+slideImages.length)%slideImages.length;
+        showSlide();
+      }
+    function slideNumber(slideNo)
+      {
+        currentSlide=slideNo-1;
+        showSlide();
+      }
+    showSlide();
+  </script>
+  <div id='slide_box'>
+    <img id='slide' src='Slide1.pdf' alt='Slide_1' style='width:100%; 
+      max-width:1600px;'>
+  <div class='button_box'>
+    <button class='button' onclick='nextSlide()'>Next</button>
+    <button class='button' onclick='backSLide()'>Back</button>
+  </div>
+  <div class='slide_no_box'>
+    <button class='button' onclick='slideNumber(1)'>Slide 1</button>
+    <button class='button' onclick='slideNumber(2)'>Slide 2</button>
+    <button class='button' onclick='slideNumber(3)'>Slide 3</button>
+    <button class='button' onclick='slideNumber(4)'>SLide 4</button>
+    <button class='button' onclick='slideNumber(5)'>Slide 5</button>
+    <button class='button' onclick='slideNumber(6)'>Slide 6</button>
+  </div>
+  <style>
+    #slide_box
+    {
+      text-align: center;
+      position: relative;
+    }
+    .button_box
+    {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: -100px;
+    }
+    .button
+    {
+      padding 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor:pointer;
+      margin: 0 5px;
+    }
+    .slide_no_box
+    {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: -50px;
+    }
+  </style>
+  </div>
 	   
 </body>
 	   
