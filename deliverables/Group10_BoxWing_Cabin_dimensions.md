@@ -60,4 +60,4 @@ All gaps are within the CS 25.807 limit of 60 ft (18.29 m); D2-D3 is the tight o
 | **Cabin length** | | **50.01 m** |
 
 Fuselage length estimate: ~6.5 m nose/cockpit + cabin + ~8 m tail cone = ~64-65 m (A330-900: 63.7 m).
-Box wing: front wing box under the floor near D3 (overwing Type A exit, as on the A350); rear wing on twin fins above the tail cone, so it does not cut the cabin.
+Box wing: front wing box under the floor between D2 and D3 (~40 % of fuselage length); rear wing on twin fins above the tail cone, so it does not cut the cabin.
